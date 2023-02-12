@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>BlackJack</title>
+</head>
+<body class="min-vh-100 bg-success bg-gradient">
+    <div class="container-fluid min-vh-100 d-flex align-items-center">
+        <div class="container border-5 text-center bg-white bg-gradient shadow rounded-3 p-3 w-50">
+            <div class="container m-0">
+                <h1 id="header">BlackJack</h1>
+                <p class="fs-4 m-0" id="cards"></p>
+                <p class="fs-4 mb-2" id="sumTXT"></p>
+            </div>
+            <div class="container">
+                <button class="btn btn-warning" id="startBTN" onclick="startGame()"><i class="bi bi-play-fill"></i> Start</button>
+                <button class="btn btn-warning" id="newCardBTN" onclick="newCard()" style="display:none;"><i class="bi bi-plus-circle-fill"></i> New Card</button>
+                <button class="btn btn-danger" onclick="quit()">Quit</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
